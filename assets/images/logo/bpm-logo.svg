@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 80" width="170" height="80">
+  <defs>
+    <filter id="neon-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- Clean BPM. Brand -->
+  <text x="5" y="56" font-family="'Unbounded', 'Montserrat', 'Arial Black', sans-serif" font-size="52" font-weight="900" fill="#ffffff" letter-spacing="2">
+    BPM<tspan fill="#ccff00">.</tspan>
+  </text>
+</svg>

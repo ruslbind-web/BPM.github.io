@@ -1,0 +1,16 @@
+# BPM Apache Configuration
+AddDefaultCharset UTF-8
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
+# Prevent directory listings
+Options -Indexes
+
+# Protect database files
+<FilesMatch "\.(sql|log|ini)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+</IfModule>

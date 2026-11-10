@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 380" width="500" height="380">
+  <defs>
+    <radialGradient id="pbg" cx="50%" cy="50%" r="65%">
+      <stop offset="0%" stop-color="#141424" />
+      <stop offset="70%" stop-color="#0a0a12" />
+      <stop offset="100%" stop-color="#040407" />
+    </radialGradient>
+    <filter id="pglow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="velcro-hook" width="8" height="8" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="4" r="1" fill="rgba(255,255,255,0.08)" />
+    </pattern>
+  </defs>
+
+  <!-- Patch background with Velcro border stitches -->
+  <rect x="15" y="15" width="470" height="350" rx="14" fill="url(#pbg)" stroke="#00f0ff" stroke-width="2" />
+  
+  <!-- Outer velcro overlock border -->
+  <rect x="22" y="22" width="456" height="336" rx="10" fill="url(#velcro-hook)" stroke="rgba(255,255,255,0.1)" stroke-width="1.5" stroke-dasharray="4 2" />
+
+  <!-- Corner Velcro Grippers -->
+  <rect x="28" y="28" width="14" height="14" rx="3" fill="#9333ea" />
+  <rect x="458" y="28" width="14" height="14" rx="3" fill="#9333ea" />
+  <rect x="28" y="338" width="14" height="14" rx="3" fill="#9333ea" />
+  <rect x="458" y="338" width="14" height="14" rx="3" fill="#9333ea" />
+
+  <!-- Technical Spec Header -->
+  <text x="45" y="50" font-family="'JetBrains Mono', monospace" font-size="11" fill="rgba(255,255,255,0.4)" letter-spacing="2">VELCRO PATCH // 200x150MM</text>
+  <text x="455" y="50" font-family="'JetBrains Mono', monospace" font-size="11" fill="#00f0ff" text-anchor="end" font-weight="700">SWAPPABLE</text>
+
+  <!-- Artwork center -->
+          <!-- Sound waves / equalizer -->
+        <g transform="translate(70, 110)">
+          <rect x="0" y="50" width="16" height="60" rx="4" fill="#9333ea" />
+          <rect x="25" y="30" width="16" height="100" rx="4" fill="#00f0ff" filter="url(#pglow)"/>
+          <rect x="50" y="10" width="16" height="140" rx="4" fill="#9333ea" />
+          <rect x="75" y="0" width="16" height="160" rx="4" fill="#ccff00" />
+          <rect x="100" y="20" width="16" height="120" rx="4" fill="#00f0ff" />
+          <rect x="125" y="45" width="16" height="70" rx="4" fill="#9333ea" />
+          <rect x="150" y="15" width="16" height="130" rx="4" fill="#ffffff" />
+          <rect x="175" y="0" width="16" height="160" rx="4" fill="#00f0ff" />
+          <rect x="200" y="35" width="16" height="90" rx="4" fill="#9333ea" />
+          <rect x="225" y="20" width="16" height="120" rx="4" fill="#ccff00" />
+          <rect x="250" y="60" width="16" height="40" rx="4" fill="#00f0ff" />
+          <rect x="275" y="30" width="16" height="100" rx="4" fill="#9333ea" />
+          <rect x="300" y="10" width="16" height="140" rx="4" fill="#00f0ff" />
+          <rect x="325" y="50" width="16" height="60" rx="4" fill="#9333ea" />
+          <rect x="350" y="20" width="16" height="120" rx="4" fill="#ccff00" />
+        </g>
+        <text x="250" y="305" font-family="'JetBrains Mono', monospace" font-size="20" font-weight="900" fill="#00f0ff" text-anchor="middle" letter-spacing="4">144 BPM AUDIO SPECTRUM</text>
+
+  <!-- Technical bottom tag -->
+  <text x="250" y="348" font-family="'JetBrains Mono', monospace" font-size="10" fill="rgba(255,255,255,0.35)" text-anchor="middle" letter-spacing="3">HOOK &amp; LOOP COMPATIBLE // BPM-04</text>
+</svg>

@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 700" width="600" height="700">
+  <defs>
+    <radialGradient id="bg-glow" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.25" />
+      <stop offset="60%" stop-color="#0a0a14" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#050508" stop-opacity="1" />
+    </radialGradient>
+    <linearGradient id="fabric-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#191924" />
+      <stop offset="50%" stop-color="#101018" />
+      <stop offset="100%" stop-color="#09090d" />
+    </linearGradient>
+    <linearGradient id="neon-acc" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f0ff" />
+      <stop offset="100%" stop-color="#a855f7" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="700" fill="url(#bg-glow)" />
+
+  <!-- Cyber grid lines -->
+  <g stroke="rgba(255,255,255,0.03)" stroke-width="1">
+    <line x1="0" y1="100" x2="600" y2="100" />
+    <line x1="0" y1="200" x2="600" y2="200" />
+    <line x1="0" y1="300" x2="600" y2="300" />
+    <line x1="0" y1="400" x2="600" y2="400" />
+    <line x1="0" y1="500" x2="600" y2="500" />
+    <line x1="0" y1="600" x2="600" y2="600" />
+    <line x1="100" y1="0" x2="100" y2="700" />
+    <line x1="200" y1="0" x2="200" y2="700" />
+    <line x1="300" y1="0" x2="300" y2="700" />
+    <line x1="400" y1="0" x2="400" y2="700" />
+    <line x1="500" y1="0" x2="500" y2="700" />
+  </g>
+
+  <!-- Technical Marks -->
+  <text x="35" y="45" font-family="'JetBrains Mono', monospace" font-size="11" fill="rgba(255,255,255,0.4)" letter-spacing="2">BPM SOUND SYSTEM // SPEC-500GSM</text>
+  <text x="565" y="45" font-family="'JetBrains Mono', monospace" font-size="11" fill="#a855f7" text-anchor="end" font-weight="700">NEW DROP</text>
+
+  <!-- Hoodie Silhouette -->
+  <g transform="translate(0, 20)">
+    <!-- Shoulders & Torso -->
+    <path d="M 170 140 
+             Q 220 120 300 120 
+             Q 380 120 430 140 
+             L 530 260 
+             L 470 300 
+             L 435 240 
+             L 435 540 
+             Q 300 560 165 540 
+             L 165 240 
+             L 130 300 
+             L 70 260 Z" 
+          fill="url(#fabric-grad)" 
+          stroke="rgba(255,255,255,0.12)" 
+          stroke-width="2" />
+
+    <!-- Hood -->
+    <path d="M 215 130 
+             C 210 70 250 40 300 40 
+             C 350 40 390 70 385 130 
+             Q 300 170 215 130 Z" 
+          fill="#141420" 
+          stroke="rgba(255,255,255,0.15)" 
+          stroke-width="2" />
+    <!-- Hood opening / collar -->
+    <ellipse cx="300" cy="135" rx="55" ry="30" fill="#0b0b10" stroke="#00f0ff" stroke-width="1.5" stroke-dasharray="4 2" />
+
+    <!-- Drawstrings -->
+    <path d="M 275 145 Q 265 210 270 260" stroke="#a855f7" stroke-width="2" fill="none" />
+    <circle cx="270" cy="265" r="4" fill="#a855f7" />
+    <path d="M 325 145 Q 335 210 330 260" stroke="#a855f7" stroke-width="2" fill="none" />
+    <circle cx="330" cy="265" r="4" fill="#a855f7" />
+
+    <!-- Kangaroo Pocket -->
+    <path d="M 200 430 L 400 430 L 415 510 L 185 510 Z" fill="#151522" stroke="rgba(255,255,255,0.08)" stroke-width="1.5" />
+
+    <!-- VELCRO CONTACT PANEL (Modular print base) -->
+    <g transform="translate(190, 205)">
+      <!-- Velcro base rectangle with micro-texture -->
+      <rect x="0" y="0" width="220" height="155" rx="8" fill="#1e1e2d" stroke="#a855f7" stroke-width="1.5" stroke-dasharray="6 3" />
+      
+      <!-- Velcro Corner Targets -->
+      <circle cx="8" cy="8" r="3" fill="#a855f7" />
+      <circle cx="212" cy="8" r="3" fill="#a855f7" />
+      <circle cx="8" cy="147" r="3" fill="#a855f7" />
+      <circle cx="212" cy="147" r="3" fill="#a855f7" />
+
+      <!-- Active Mounted Print Preview or Velcro Base Text -->
+      <rect x="10" y="10" width="200" height="135" rx="5" fill="#0d0d16" />
+      
+      <!-- Graphic Inside Velcro Patch -->
+      <g transform="translate(10, 10)">
+        <!-- Art: Psychedelic Matrix or Cyber Glitch -->
+        <circle cx="100" cy="67" r="45" fill="none" stroke="#00f0ff" stroke-width="2" filter="url(#glow)"/>
+        <circle cx="100" cy="67" r="30" fill="none" stroke="#a855f7" stroke-width="1.5"/>
+        <circle cx="100" cy="67" r="14" fill="#a855f7" />
+        <!-- Radiating rays -->
+        <line x1="100" y1="12" x2="100" y2="30" stroke="#00f0ff" stroke-width="2" />
+        <line x1="100" y1="104" x2="100" y2="122" stroke="#00f0ff" stroke-width="2" />
+        <line x1="45" y1="67" x2="63" y2="67" stroke="#00f0ff" stroke-width="2" />
+        <line x1="137" y1="67" x2="155" y2="67" stroke="#00f0ff" stroke-width="2" />
+        <text x="100" y="125" font-family="'JetBrains Mono', monospace" font-size="9" fill="#a855f7" text-anchor="middle" font-weight="700" letter-spacing="2">VELCRO PATCH // 144 BPM</text>
+      </g>
+
+      <!-- Label tag below patch -->
+      <rect x="40" y="160" width="140" height="18" rx="3" fill="rgba(0,240,255,0.1)" stroke="#a855f7" stroke-width="0.8" />
+      <text x="110" y="172" font-family="'JetBrains Mono', monospace" font-size="9" fill="#ffffff" text-anchor="middle">СМЕННАЯ ВЕЛКРО-БАЗА</text>
+    </g>
+
+    <!-- Hem and Cuffs with neon stitch accents -->
+    <line x1="165" y1="535" x2="435" y2="535" stroke="#00f0ff" stroke-width="2" stroke-dasharray="5 3" />
+  </g>
+
+  <!-- Bottom Spec Bar -->
+  <rect x="30" y="625" width="540" height="50" rx="8" fill="rgba(15, 15, 25, 0.85)" stroke="rgba(255,255,255,0.1)" />
+  <text x="50" y="655" font-family="'Unbounded', sans-serif" font-size="16" font-weight="800" fill="#ffffff">DARK TECHNO ZIP-HOODIE</text>
+  <text x="550" y="655" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="700" fill="#a855f7" text-anchor="end">VELCRO READY</text>
+</svg>

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 380" width="500" height="380">
+  <defs>
+    <radialGradient id="pbg" cx="50%" cy="50%" r="65%">
+      <stop offset="0%" stop-color="#141424" />
+      <stop offset="70%" stop-color="#0a0a12" />
+      <stop offset="100%" stop-color="#040407" />
+    </radialGradient>
+    <filter id="pglow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="velcro-hook" width="8" height="8" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="4" r="1" fill="rgba(255,255,255,0.08)" />
+    </pattern>
+  </defs>
+
+  <!-- Patch background with Velcro border stitches -->
+  <rect x="15" y="15" width="470" height="350" rx="14" fill="url(#pbg)" stroke="#ccff00" stroke-width="2" />
+  
+  <!-- Outer velcro overlock border -->
+  <rect x="22" y="22" width="456" height="336" rx="10" fill="url(#velcro-hook)" stroke="rgba(255,255,255,0.1)" stroke-width="1.5" stroke-dasharray="4 2" />
+
+  <!-- Corner Velcro Grippers -->
+  <rect x="28" y="28" width="14" height="14" rx="3" fill="#a855f7" />
+  <rect x="458" y="28" width="14" height="14" rx="3" fill="#a855f7" />
+  <rect x="28" y="338" width="14" height="14" rx="3" fill="#a855f7" />
+  <rect x="458" y="338" width="14" height="14" rx="3" fill="#a855f7" />
+
+  <!-- Technical Spec Header -->
+  <text x="45" y="50" font-family="'JetBrains Mono', monospace" font-size="11" fill="rgba(255,255,255,0.4)" letter-spacing="2">VELCRO PATCH // 200x150MM</text>
+  <text x="455" y="50" font-family="'JetBrains Mono', monospace" font-size="11" fill="#ccff00" text-anchor="end" font-weight="700">SWAPPABLE</text>
+
+  <!-- Artwork center -->
+          <!-- Melted Acid Smile -->
+        <circle cx="250" cy="180" r="95" fill="#ccff00" filter="url(#pglow)"/>
+        <!-- Big black eyes -->
+        <ellipse cx="215" cy="155" rx="14" ry="24" fill="#0b0b12" />
+        <ellipse cx="285" cy="155" rx="14" ry="24" fill="#0b0b12" />
+        <!-- Dripping melted smile -->
+        <path d="M 195 200 Q 250 260 305 200 Q 300 230 285 240 Q 275 280 265 240 Q 250 290 235 240 Q 215 260 195 200 Z" fill="#0b0b12" />
+        <text x="250" y="320" font-family="'Unbounded', sans-serif" font-size="16" font-weight="900" fill="#ccff00" text-anchor="middle" letter-spacing="3">ACID ACID ACID</text>
+
+  <!-- Technical bottom tag -->
+  <text x="250" y="348" font-family="'JetBrains Mono', monospace" font-size="10" fill="rgba(255,255,255,0.35)" text-anchor="middle" letter-spacing="3">HOOK &amp; LOOP COMPATIBLE // BPM-04</text>
+</svg>

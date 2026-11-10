@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 380" width="500" height="380">
+  <defs>
+    <radialGradient id="pbg" cx="50%" cy="50%" r="65%">
+      <stop offset="0%" stop-color="#141424" />
+      <stop offset="70%" stop-color="#0a0a12" />
+      <stop offset="100%" stop-color="#040407" />
+    </radialGradient>
+    <filter id="pglow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="velcro-hook" width="8" height="8" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="4" r="1" fill="rgba(255,255,255,0.08)" />
+    </pattern>
+  </defs>
+
+  <!-- Patch background with Velcro border stitches -->
+  <rect x="15" y="15" width="470" height="350" rx="14" fill="url(#pbg)" stroke="#ccff00" stroke-width="2" />
+  
+  <!-- Outer velcro overlock border -->
+  <rect x="22" y="22" width="456" height="336" rx="10" fill="url(#velcro-hook)" stroke="rgba(255,255,255,0.1)" stroke-width="1.5" stroke-dasharray="4 2" />
+
+  <!-- Corner Velcro Grippers -->
+  <rect x="28" y="28" width="14" height="14" rx="3" fill="#00f0ff" />
+  <rect x="458" y="28" width="14" height="14" rx="3" fill="#00f0ff" />
+  <rect x="28" y="338" width="14" height="14" rx="3" fill="#00f0ff" />
+  <rect x="458" y="338" width="14" height="14" rx="3" fill="#00f0ff" />
+
+  <!-- Technical Spec Header -->
+  <text x="45" y="50" font-family="'JetBrains Mono', monospace" font-size="11" fill="rgba(255,255,255,0.4)" letter-spacing="2">VELCRO PATCH // 200x150MM</text>
+  <text x="455" y="50" font-family="'JetBrains Mono', monospace" font-size="11" fill="#ccff00" text-anchor="end" font-weight="700">SWAPPABLE</text>
+
+  <!-- Artwork center -->
+          <!-- Cyber Skull Glitch -->
+        <path d="M 200 130 C 200 80 300 80 300 130 C 300 150 290 170 280 185 L 285 240 L 215 240 L 220 185 C 210 170 200 150 200 130 Z" fill="#141424" stroke="#00f0ff" stroke-width="4" filter="url(#pglow)"/>
+        <!-- Eyes -->
+        <circle cx="230" cy="140" r="18" fill="#ccff00" />
+        <circle cx="270" cy="140" r="18" fill="#ccff00" />
+        <!-- Glitch lines -->
+        <line x1="150" y1="125" x2="350" y2="125" stroke="#ccff00" stroke-width="3" stroke-dasharray="15 8 30 5" />
+        <line x1="170" y1="170" x2="330" y2="170" stroke="#ccff00" stroke-width="3" stroke-dasharray="25 10 15 8" />
+        <!-- Teeth -->
+        <rect x="235" y="210" width="6" height="18" fill="#ffffff" />
+        <rect x="247" y="210" width="6" height="18" fill="#ffffff" />
+        <rect x="259" y="210" width="6" height="18" fill="#ffffff" />
+        <text x="250" y="295" font-family="'Unbounded', sans-serif" font-size="16" font-weight="900" fill="#ffffff" text-anchor="middle">CYBER-GLITCH SKULL</text>
+
+  <!-- Technical bottom tag -->
+  <text x="250" y="348" font-family="'JetBrains Mono', monospace" font-size="10" fill="rgba(255,255,255,0.35)" text-anchor="middle" letter-spacing="3">HOOK &amp; LOOP COMPATIBLE // BPM-04</text>
+</svg>
